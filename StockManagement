@@ -1,0 +1,23 @@
+
+import java.util.*;
+class StockManagement {
+
+    public static void main(String[] args) {
+        int productn ; 
+        int stock ;
+        int min ;
+        Scanner sc = new Scanner();
+        System.out.println("Enter Product Number");
+        productn = sc.nextInt();
+        System.out.println("Enter current Stock");
+        stock = sc.nextInt();
+        System.out.println("Enter Minimum Stock");
+        min = sc.nextInt();
+
+        if(stock < min){
+            int q ;
+            q = min - stock;
+            System.out.println("Stock of product %d is low than minimum threshold by %d units",productn,q);
+        }
+    }
+}
